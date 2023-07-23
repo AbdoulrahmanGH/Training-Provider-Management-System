@@ -1,0 +1,56 @@
+/* profileStyle.css */
+
+/* Styles for the profile card */
+.profile-card {
+    max-width: 600px; /* Increased size */
+    background: linear-gradient(#1c5054, #1c5c5c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow */
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .profile-pic {
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #ddd;
+    background-image: url('/img/profile-icon.png'); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .profile-info {
+    text-align: center;
+    margin-top: 40px; /* Increased margin */
+  }
+  
+  .profile-info h2 {
+    color: #000;
+    margin-bottom: 10px; /* Increased margin */
+    font-weight: bold;
+    font-size: 44px; /* Increased font size */
+  }
+  
+  .profile-info p {
+    color: #000;
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 24px; /* Increased margin */
+  }
+  
+  .profile-info p span {
+    font-weight: bold;
+  }
+  
+  .profile-info p i {
+    margin-right: 10px; /* Increased margin */
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      max-width: 80%; /* Adjust width for smaller screens */
+    }
+  }
+  

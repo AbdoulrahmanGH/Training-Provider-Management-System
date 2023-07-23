@@ -1,0 +1,322 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: none;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  width: 180px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar button {
+  background-color: #ffd700;
+  color: #333;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button:hover {
+  background-color: #ffcd00;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  .search-bar {
+    margin-top: 20px;
+  }
+}
+
+/* Hero section styles */
+#home {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#home h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#home p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+#home .btn {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#home .btn:hover {
+  background-color: #ffcd00;
+  transform: scale(1.05);
+}
+
+#home .learn-anywhere {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Featured courses section styles */
+#courses {
+  padding: 60px 0;
+  text-align: center;
+  background-image: url('../img/featuredcourse2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+#courses h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.course {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.course img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.course h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  transition: color 0.3s;
+  letter-spacing: 1px;
+}
+
+.course p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.course .btn {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course .btn:hover {
+  background-color: #ffcd00;
+  transform: scale(1.05);
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Additional color styles */
+
+/* Header background color */
+header {
+  background-color: #333;
+}
+
+/* Logo color */
+.logo {
+  color: white;
+}
+
+/* Menu link color */
+.menu li a {
+  color: #fff;
+}
+
+/* Active menu link color */
+.menu li.active a {
+  color: #ffd700;
+}
+
+/* Hero button background color */
+#home .btn {
+  background-color: #ffd700;
+}
+
+/* Hero button hover background color */
+#home .btn:hover {
+  background-color: #ffcd00;
+}
+
+/* Course title color */
+.course h3 {
+  color: #333;
+}
+
+/* Course description color */
+.course p {
+  color: #666;
+}
+
+/* Course button background color */
+.course .btn {
+  background-color: #ffd700;
+}
+
+/* Course button hover background color */
+.course .btn:hover {
+  background-color: #ffcd00;
+}
+
+/* Footer text color */
+footer {
+  color: #fff;
+}

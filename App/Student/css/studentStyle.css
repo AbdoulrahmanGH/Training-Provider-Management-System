@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background: url("../img/bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+/*Content section*/
+.welcome-section {
+    margin-top: 18%;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+
+.welcome-heading {
+    color: #fff;
+    font-size: 66px;
+    font-weight: bold;
+}
+
+.welcome-message {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.my-courses-button {
+    width: 20%;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    
+}
+
+.my-courses-button:hover {
+    background: #d2d2d2;
+    color: #333;
+    transition: .4s;
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header .title {
+        font-size: 20px;
+    }
+
+    header .navbar ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .welcome-heading {
+        font-size: 40px;
+    }
+
+    .welcome-message {
+        font-size: 16px;
+    }
+
+    .my-courses-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
